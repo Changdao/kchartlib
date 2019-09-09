@@ -18,15 +18,5 @@
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/tv_fullScreen"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:text="切屏"
-            android:textColor="@color/chart_white"
-            android:layout_alignParentRight="true"
-            android:paddingRight="15dp"
-            android:gravity="center" />
     </RelativeLayout>
 </LinearLayout>

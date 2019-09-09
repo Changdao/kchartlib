@@ -165,7 +165,7 @@ public class MainDraw implements IChartDraw<ICandle>{
         ICandle point = (ICandle) view.getItem(index);
         List<String> strings = new ArrayList<>();
         //strings.add(view.formatDateTime(view.getAdapter().getDate(index)));
-        strings.add(view.getAdapter().getDate(index));
+        strings.add(view.getAdapter().getDateString(index));
         strings.add("高:" + point.getHighPrice());
         strings.add("低:" + point.getLowPrice());
         strings.add("开:" + point.getOpenPrice());

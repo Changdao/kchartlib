@@ -53,8 +53,8 @@ public class KChartTabView extends RelativeLayout implements View.OnClickListene
         view.setLayoutParams(layoutParams);
         addView(view);
         mLlContainer = (LinearLayout) findViewById(R.id.ll_container);
-        mTvFullScreen = (TextView) findViewById(R.id.tv_fullScreen);
-        mTvFullScreen.setOnClickListener(new OnClickListener() {
+        //mTvFullScreen = (TextView) findViewById(R.id.tv_fullScreen);
+        /*mTvFullScreen.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
                 Activity activity = (Activity) getContext();
@@ -71,7 +71,7 @@ public class KChartTabView extends RelativeLayout implements View.OnClickListene
         if(mColorStateList!=null)
         {
             mTvFullScreen.setTextColor(mColorStateList);
-        }
+        }*/
     }
 
     @Override
@@ -146,10 +146,10 @@ public class KChartTabView extends RelativeLayout implements View.OnClickListene
             TabView tabView= (TabView) mLlContainer.getChildAt(i);
             tabView.setTextColor(mColorStateList);
         }
-        if(mColorStateList!=null)
+        /*if(mColorStateList!=null)
         {
             mTvFullScreen.setTextColor(mColorStateList);
-        }
+        }*/
     }
 
     public void setIndicatorColor(int color)
