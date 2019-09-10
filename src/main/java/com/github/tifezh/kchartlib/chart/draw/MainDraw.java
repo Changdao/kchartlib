@@ -195,6 +195,22 @@ public class MainDraw implements IChartDraw<ICandle>{
     }
 
     /**
+     * 设置蜡烛上涨颜色
+     */
+
+     public void setIncreasingColor(int color){
+         this.mRedPaint.setColor(color);
+     }
+
+     /**
+      * 设置蜡烛下跌颜色
+      */
+     public void setDecreasingColor(int color){
+         this.mGreenPaint.setColor(color);
+     }
+
+    
+    /**
      * 设置蜡烛宽度
      * @param candleWidth
      */

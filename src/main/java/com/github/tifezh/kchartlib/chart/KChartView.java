@@ -147,6 +147,19 @@ public class KChartView extends BaseKChartView {
         return ContextCompat.getColor(getContext(),resId);
     }
 
+    public void setIncreasingColor(int color)
+    {
+        mMainDraw.setIncreasingColor(color);
+        mVolumeDraw.setIncreasingColor(color);
+    }
+
+    public void setDecreasingColor(int color)
+    {
+        mMainDraw.setDecreasingColor(color);
+        mVolumeDraw.setDecreasingColor(color);
+    }
+
+
     @Override
     public void onLeftSide() {
         showLoading();

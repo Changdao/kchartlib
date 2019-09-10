@@ -88,6 +88,15 @@ public class VolumeDraw implements IChartDraw<IVolume> {
         return new BigValueFormatter();
     }
 
+
+    public void setIncreasingColor(int color){
+        this.mRedPaint.setColor(color);
+    }
+
+    public void setDecreasingColor(int color){
+        this.mGreenPaint.setColor(color);
+    }
+
     /**
      * 设置 MA5 线的颜色
      *
