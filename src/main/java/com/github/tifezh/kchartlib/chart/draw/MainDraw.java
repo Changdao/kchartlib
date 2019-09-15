@@ -74,7 +74,7 @@ public class MainDraw implements IChartDraw<ICandle>{
     public void drawText(@NonNull Canvas canvas, @NonNull BaseKChartView view, int position, float x, float y) {
         ICandle point = (IKLine) view.getItem(position);
         String text = "MA5:" + view.formatValue(point.getMA5Price()) + " ";
-        Log.i("KCHARTLIB","drawText:"+text);
+        //Log.i("KCHARTLIB","drawText:"+text);
         canvas.drawText(text, x, y, ma5Paint);
         x += ma5Paint.measureText(text);
         text = "MA10:" + view.formatValue(point.getMA10Price()) + " ";
@@ -85,7 +85,7 @@ public class MainDraw implements IChartDraw<ICandle>{
         if (view.isLongPress()) {
             drawSelector(view, canvas);
         }
-        Log.i("KCHARTLIB","drawText");
+        //Log.i("KCHARTLIB","drawText");
     }
 
     @Override

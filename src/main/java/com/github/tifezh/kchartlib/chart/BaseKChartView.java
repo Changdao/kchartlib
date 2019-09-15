@@ -164,7 +164,7 @@ public abstract class BaseKChartView extends ScrollAndScaleView {
 
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
-        Log.i("KCHARTLIB","baseChartView onSizechanged:"+w+"  "+h);
+        //Log.i("KCHARTLIB","baseChartView onSizechanged:"+w+"  "+h);
         super.onSizeChanged(w, h, oldw, oldh);
         this.mWidth = w;
         initRect(w,h);
