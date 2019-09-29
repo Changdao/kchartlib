@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#4E87FF</color>
 
     <color name="chart_red">#DF3536</color>
     <color name="chart_green">#35DF7E</color>
@@ -16,6 +16,6 @@
     <color name="chart_grid_line">#353941</color>
     <color name="chart_text">#B1B2B6</color>
     <color name="chart_selector">#c830343C</color>
-    <color name="chart_tab_background">#30343C</color>
-    <color name="chart_tab_indicator">#FF6601</color>
+    <color name="chart_tab_background">#1D2837</color>
+    <color name="chart_tab_indicator">#4E87FF</color>
 </resources>

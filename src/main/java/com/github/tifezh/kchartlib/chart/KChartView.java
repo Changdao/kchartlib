@@ -9,6 +9,7 @@ import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ProgressBar;
+import android.graphics.PorterDuff;
 
 import com.github.tifezh.kchartlib.R;
 import com.github.tifezh.kchartlib.chart.draw.BOLLDraw;
@@ -17,6 +18,8 @@ import com.github.tifezh.kchartlib.chart.draw.MACDDraw;
 import com.github.tifezh.kchartlib.chart.draw.MainDraw;
 import com.github.tifezh.kchartlib.chart.draw.RSIDraw;
 import com.github.tifezh.kchartlib.chart.draw.VolumeDraw;
+
+import android.util.Log;
 
 /**
  * k线图
@@ -56,6 +59,7 @@ public class KChartView extends BaseKChartView {
 
     private void initView() {
         mProgressBar=new ProgressBar(getContext());
+        
         LayoutParams layoutParams = new LayoutParams(dp2px(50), dp2px(50));
         layoutParams.addRule(CENTER_IN_PARENT);
         addView(mProgressBar,layoutParams);
@@ -173,9 +177,11 @@ public class KChartView extends BaseKChartView {
     {
         if(!isLoadMoreEnd &&!isRefreshing)
         {
+            Log.i("ReactNativeJS KChatView","will set progress bar visible");
             isRefreshing=true;
             if(mProgressBar!=null)
             {
+                Log.i("ReactNativeJS KChatView","set progress bar visible");
                 mProgressBar.setVisibility(View.VISIBLE);
             }
             if(mRefreshListener!=null)
@@ -230,6 +236,11 @@ public class KChartView extends BaseKChartView {
          * @param chart
          */
         void onLoadMoreBegin(KChartView chart);
+    }
+
+
+    public void setProgressBarColor(int color){
+        if(mProgressBar!=null)mProgressBar.getIndeterminateDrawable().setColorFilter(color, PorterDuff.Mode.SRC_IN);
     }
 
     @Override
