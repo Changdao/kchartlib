@@ -1,5 +1,7 @@
 # kchartlib
-Excerpt from KChartView 
+Excerpt from KChartView original url: https://github.com/tifezh/KChartView
+
+
 
 kchartlib is a modified version, modification was made for adoption in React-Native.
 
@@ -13,5 +15,5 @@ To use KChartLib, you should.
 4. react-native link react-native-kchartview-wrapper
 
 Notice: if until your installation, the react-native-kchartview-wrapper is not published yet, you can clone it directly into node_modules.  
-As well as you should modify package.json, add the depency.
+As well as you should modify package.json, add the other dependencies.
 
